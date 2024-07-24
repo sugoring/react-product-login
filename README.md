@@ -16,15 +16,9 @@
 
 ### 테스트 기반 환경 구축
 
-- **Jest 설정**
-  - [x] Jest 설치
-  - [x] `jest.config.js` 파일 생성 및 설정 추가
-
-- **React Testing Library 설정**
-  - [x] React Testing Library 설치
-  - [x] Jest와 함께 사용하도록 설정
-
-- [x] `package.json`에 테스트 스크립트 추가
+- [x] Jest와 React Testing Library 설치 확인 (CRA 사용 시 기본 설치)
+- [x] 필요에 따라 jest.config.js 파일 생성 및 설정 추가 (선택 사항)
+- [x] package.json 파일에 테스트 스크립트 (test) 추가
 
 ### MSW(Mock Service Worker) 설정
 

@@ -24,6 +24,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "src/mocks"],
   "exclude": ["node_modules", "build", "public"]
 }

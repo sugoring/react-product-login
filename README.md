@@ -20,15 +20,9 @@
 - [x] 필요에 따라 jest.config.js 파일 생성 및 설정 추가 (선택 사항)
 - [x] package.json 파일에 테스트 스크립트 (test) 추가
 
-### MSW(Mock Service Worker) 설정
+### MSW를 활용한 Mock API 설정
 
-- **MSW 초기화 및 설정**
-  - [ ] MSW 설치
-  - [ ] `src/mocks/handlers.js` 파일 생성
-  - [ ] `src/mocks/browser.js` 파일 생성
-  - [ ] Mock API 핸들러 정의 및 브라우저 환경에서 MSW 시작
-
-- **Mock API 설정**
+- [x] npm install msw --save-dev 명령어를 사용하여 MSW 설치
   - [ ] 제품 상세 정보를 반환하는 Mock API 설정
   - [ ] 제품 옵션 정보를 반환하는 Mock API 설정
 

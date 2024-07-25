@@ -1,8 +1,11 @@
+export {};
+
 if (typeof window === 'undefined') {
-    const { server } = require('./server');
+  import('./server').then(({ server }) => {
     server.listen();
-  } else {
-    const { worker } = require('./browser');
+  });
+} else {
+  import('./browser').then(({ worker }) => {
     worker.start();
-  }
-  
+  });
+}

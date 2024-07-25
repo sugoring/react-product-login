@@ -1,5 +1,5 @@
 # React Product Login
-
+STEP1
 ## 개요
 
 본 저장소는 5주차 과제 (2024-07-22 ~ 2024-07-16)를 위한 로그인 및 관심목록 구현을 담고 있습니다. 상세한 학습 내용은 [Notion 노트](https://www.notion.so/TIL-FE-25dbeb894e884b889eca0fa3e4e13904)에서 확인할 수 있습니다.

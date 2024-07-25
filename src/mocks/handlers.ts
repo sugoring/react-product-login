@@ -1,9 +1,8 @@
-// src/mocks/handlers.ts
-import { http, HttpResponse } from 'msw';
+import { rest } from 'msw';
 
 export const handlers = [
   // 상품 상세 조회 핸들러
-  http.get('/api/products/:productId', (req, res) => {
+  rest.get('/api/products/:productId', (req, res, ctx) => {
     const { productId } = req.params;
     const product = {
       id: productId,
@@ -13,19 +12,21 @@ export const handlers = [
       categoryId: 1,
     };
     return res(
-      HttpResponse.json(product)
+      ctx.status(200),
+      ctx.json(product)
     );
   }),
   
   // 상품 옵션 목록 조회 핸들러
-  http.get('/api/products/:productId/options', (req, res) => {
+  rest.get('/api/products/:productId/options', (req, res, ctx) => {
     const { productId } = req.params;
     const options = [
-      { id: 1, name: 'Option A', quantity: 10, productId: parseInt(productId) },
-      { id: 2, name: 'Option B', quantity: 20, productId: parseInt(productId) }
+      { id: 1, name: 'Option A', quantity: 10, productId: parseInt(productId, 10) },
+      { id: 2, name: 'Option B', quantity: 20, productId: parseInt(productId, 10) }
     ];
     return res(
-      HttpResponse.json(options)
+      ctx.status(200),
+      ctx.json(options)
     );
   })
 ];

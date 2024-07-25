@@ -23,8 +23,8 @@
 ### MSW를 활용한 Mock API 설정
 
 - [x] npm install msw --save-dev 명령어를 사용하여 MSW 설치
-  - [ ] 제품 상세 정보를 반환하는 Mock API 설정
-  - [ ] 제품 옵션 정보를 반환하는 Mock API 설정
+  - [x] 제품 상세 정보를 반환하는 Mock API 설정
+  - [x] 제품 옵션 정보를 반환하는 Mock API 설정
 
 ### 단위 테스트
 

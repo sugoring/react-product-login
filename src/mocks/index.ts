@@ -1,11 +1,13 @@
 export {};
 
 if (typeof window === 'undefined') {
-  import('./server').then(({ server }) => {
+  (async () => {
+    const { server } = await import('./server');
     server.listen();
-  });
+  })();
 } else {
-  import('./browser').then(({ worker }) => {
+  (async () => {
+    const { worker } = await import('./browser');
     worker.start();
-  });
+  })();
 }
